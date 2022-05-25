@@ -1,9 +1,11 @@
-<div>
-  <a routerLink="" routerLinkActive="underline" [routerLinkActiveOptions]="{exact:true}">Home</a>
-  <a [routerLink]="['lista']" routerActive="underline" >Lista podcast</a>
-  <a [routerLink]="['play']" routerActive="underline" >Play</a>
-</div>
+<body>
+  <div>
+    <a routerLink="" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a [routerLink]="['lista']" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Lista podcast</a>
+    <a [routerLink]="['play']" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Play</a>
+  </div>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</body>

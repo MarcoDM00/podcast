@@ -1,0 +1,22 @@
+div {
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    height: 50px;
+    text-align: center;
+}
+
+div a {
+    text-decoration: none;
+    color: #20930c;
+    margin-right: 30px;
+    font-size: 40px;
+}
+
+div a:hover {
+    background-color: grey;
+    color: yellow;
+}
+
+.focus {
+    font-weight: 1000;
+}
