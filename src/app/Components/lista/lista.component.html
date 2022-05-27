@@ -1,1 +1,23 @@
- <h1>Lista works</h1>
+<h1>Lista podcast disponibili</h1>
+
+<table>
+    <tr>
+        <th>N°</th>
+        <th>Nome</th>
+        <th>Durata</th>
+        <th>Riproduci</th>
+    </tr>
+    <tr *ngFor="let p of paths; index as i">
+        <td>{{i+1}}</td>
+        <td>{{p.nome}}</td>
+        <td>{{p.durata}}</td>
+        <td>
+            <button [routerLink]="['../play', i, p.nome]">
+                <svg width="100px" height="80px">
+                    <path d="M 10 10 L 10 80 L 100 45 z" fill="black"/>
+                    <!--<polyline points="10,10 10,80 100,45"/>-->
+                </svg>
+            </button>
+        </td>
+    </tr>
+</table>

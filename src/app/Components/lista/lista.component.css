@@ -1,0 +1,19 @@
+table {
+    width: 99vw;
+    min-width: 350px;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+td {
+    padding: 10px 10px;
+    background-color: green;
+    color: white;
+}
+td:not(.replay) {
+    max-width: 10vw;
+    min-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

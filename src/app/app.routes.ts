@@ -6,5 +6,5 @@ import { PlayComponent } from "./Components/play/play.component";
 export const AppRoutes : Routes = [
     {path: "", component: DefaultComponent},
     {path: "lista", component: ListaComponent},
-    {path: "play", component: PlayComponent},
+    {path: "play/:id/:nome", component: PlayComponent},
 ];
