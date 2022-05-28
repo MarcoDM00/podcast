@@ -1,11 +1,19 @@
-<h1>Podcast {{nome}}</h1>
+<h1>Podcast '{{nome}}'</h1>
 
 <audio controls [src]="src"></audio>
 
-<button click="id--">
-    <svg>
-        <path d="
-            
-        "></path>
+<br>
+
+<button [routerLink]="['../../play', id == 0 ? 2 : id-1]">
+    <svg width="100px" height="100px">
+        <path d="M 95 10 L 75 45 L 95 90 L 30 90 L 0 45 L 30 10 z"/>
     </svg>
 </button>
+
+<button [routerLink]="['../../play', id == 2 ? 0 : id-1+2]">
+    <svg width="100px" height="100px">
+        <path d="M 10 10 L 30 45 L 10 90 L 75 90 L 100 45 L 75 10 z"/>
+    </svg>
+</button>
+
+<p>soldati gay</p>

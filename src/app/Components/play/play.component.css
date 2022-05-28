@@ -1,0 +1,23 @@
+button {
+    margin-top: 50px;
+    margin-right: 10px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: slidebg 2s linear infinite;
+}
+
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+}
+
+@keyframes slidebg {
+    to {
+      background-position:15vw;
+    }
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5vw;
+}

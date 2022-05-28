@@ -17,3 +17,10 @@ td:not(.replay) {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+td button {
+    background-color: green;
+    border-width: 0px;
+}
+input {
+    display: none;
+}

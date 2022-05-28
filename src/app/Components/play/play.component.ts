@@ -8,23 +8,26 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PlayComponent implements OnInit {
   id:number = 0;
-  nome:string ="";
+  nome:string = "";
   src:string = "";
-  paths:string[] = [];
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(
       (params) => {
-        this.id = parseInt(params.id);
-        this.nome = params.nome;
+        this.id = params.id;
       }
     );
-    this.paths = this.richiediAudio();
-  }
-
-  richiediAudio() {
-    return [];
+    if (this.id == 0) {
+      this.nome = "Hey";
+      this.src = "../../assets/hey.mp3";
+    } else if (this.id == 1) {
+      this.nome = "Summer";
+      this.src = "../../assets/summer.mp3";
+    } else if (this.id == 2) {
+      this.nome = "Ukulele";
+      this.src = "../../assets/ukulele.mp3";
+    }
   }
 }
